@@ -21,6 +21,20 @@ proxies:
       Host: ''
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
   type: vless
+  server: 43.159.4.80
+  port: 443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn8848.776676.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - xiaohe
+  type: vless
   server: 104.16.60.10
   port: 443
   uuid: cdf5205e-897f-46a7-8d7f-21a61a80b466
@@ -40,6 +54,7 @@ proxy-groups:
   - AUTO
   - 🇭🇰 中国香港 (Hong Kong) 01 - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -47,5 +62,6 @@ proxy-groups:
   proxies:
   - 🇭🇰 中国香港 (Hong Kong) 01 - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 03 - xiaohe
 rules:
 - MATCH,PROXIES
