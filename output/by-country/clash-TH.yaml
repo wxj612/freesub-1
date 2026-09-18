@@ -19,18 +19,18 @@ proxies:
       Host: aIs.SpEeDtEsT.nEt
 - name: 🇹🇭 TH 02 - xiaohe
   type: vless
-  server: 104.18.26.90
-  port: 443
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  server: 152.67.101.72
+  port: 23010
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: v2ray.simspeedup.com
+  servername: cdn8848.776676.xyz
   network: ws
   ws-opts:
-    path: /ws
+    path: /books?ed=2560fp=chrome
     headers:
-      Host: v2ray.simspeedup.com
+      Host: cdn8848.776676.xyz
 - name: 🇹🇭 TH 03 - xiaohe
   type: vmess
   server: 118.193.57.167
