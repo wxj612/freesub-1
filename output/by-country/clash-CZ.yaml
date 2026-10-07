@@ -34,18 +34,18 @@ proxies:
       Host: ccc.010304.xyz
 - name: 🇨🇿 CZ 03 - xiaohe
   type: vless
-  server: 80.211.27.249
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  server: 172.67.130.187
+  port: 2083
+  uuid: 2b8738de-1af5-4267-b101-c05707769ed4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: fzo5i.ir46.90k.hh.ov0.kdns.fr
+  servername: fans.liverpool.qzz.io
   network: ws
   ws-opts:
-    path: /glasspanel/guest000_0_5de14443985f/
+    path: /eyJqdW5rIjoiY0Y0cENQUmxsNyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
     headers:
-      Host: fzo5i.ir46.90k.hh.ov0.kdns.fr
+      Host: fans.liverpool.qzz.io
 proxy-groups:
 - name: PROXIES
   type: select
