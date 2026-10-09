@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇷🇴 RO 01 - xiaohe
+- name: 🇨🇿 CZ 01 - xiaohe
   type: vless
-  server: 46.183.16.4
-  port: 2087
-  uuid: 69d76969-4c52-40f5-ac1d-303571634362
+  server: 188.114.96.3
+  port: 443
+  uuid: 5d4f5139-6965-42ed-8dba-fe3ef9fed7c1
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ro1.b0w.ir
+  servername: 022XW1dMCzG0C6165Pcla6.tOMBORn69.WOrkErS.dev
   network: ws
   ws-opts:
-    path: /
+    path: /vl/9QqHUXZVAXGwloTMo5uOQLnnjSncQ?ed=2560
     headers:
-      Host: 46.183.16.4
+      Host: 022xw1dmczg0c6165pcla6.tomborn69.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇷🇴 RO 01 - xiaohe
+  - 🇨🇿 CZ 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇷🇴 RO 01 - xiaohe
+  - 🇨🇿 CZ 01 - xiaohe
 rules:
 - MATCH,PROXIES
